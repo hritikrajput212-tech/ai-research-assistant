@@ -1,0 +1,152 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f3f4f6;
+}
+
+.container{
+  width:90%;
+  max-width:900px;
+  margin:30px auto;
+}
+
+.header{
+  text-align:center;
+  margin-bottom:25px;
+}
+
+.header h1{
+  color:#2563eb;
+  margin-bottom:8px;
+}
+
+.header p{
+  color:#666;
+}
+
+.upload-box{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.upload-box button{
+  margin-top:15px;
+  padding:10px 18px;
+  border:none;
+  border-radius:8px;
+  background:#2563eb;
+  color:white;
+  cursor:pointer;
+}
+
+.chat-box{
+  height:400px;
+  overflow-y:auto;
+  background:white;
+  border-radius:10px;
+  padding:20px;
+  box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.user-message{
+  background:#2563eb;
+  color:white;
+  padding:12px;
+  border-radius:12px;
+  width:fit-content;
+  max-width:80%;
+  margin-left:auto;
+  margin-bottom:15px;
+}
+
+.ai-message{
+  background:#e5e7eb;
+  padding:12px;
+  border-radius:12px;
+  width:fit-content;
+  max-width:80%;
+  margin-bottom:15px;
+}
+
+.input-box{
+  display:flex;
+  gap:10px;
+  margin-top:20px;
+}
+
+.input-box input{
+  flex:1;
+  padding:15px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+.input-box button{
+  padding:15px 25px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+button:hover{
+  opacity:.9;
+}
+/* ---------- Top Bar ---------- */
+
+.top-bar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.theme-btn{
+  background:#2563eb;
+  color:white;
+  border:none;
+  padding:10px 18px;
+  border-radius:8px;
+  cursor:pointer;
+}
+
+/* ---------- Dark Theme ---------- */
+
+body.dark{
+  background:#121212;
+  color:white;
+}
+
+body.dark .upload-box,
+body.dark .chat-box{
+  background:#1f1f1f;
+  color:white;
+}
+
+body.dark .input-box input{
+  background:#2d2d2d;
+  color:white;
+  border:1px solid #444;
+}
+
+body.dark .ai-message{
+  background:#333;
+  color:white;
+}
+
+body.dark .user-message{
+  background:#2563eb;
+}
+
+body.dark .header p{
+  color:#bbb;
+}
